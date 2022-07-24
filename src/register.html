@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+    <!-- <link href="/dist/output.css" rel="stylesheet"> -->
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   </head>
+<body>
+  <div class="container">
+    <body class="bg-gradient-to-r from-sky-100 via-white to-green-100 font-mono">
+    <div class="title">Registration</div>
+    <div class="row justify-content-center">
+      <div class="col-md-8">
+        <div class="row">
+          <div class="col text-end">
+            <a id="login" href="#" class="btn btn-primary hidden">Login</a>
+            <div class="hidden small-text">
+              <span class="address"></span>
+              <br>
+              <a id="logout" href="#">Logout</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="content">
+      
+      <form id="itemAdd">
+        <div class="user-details">
+          <div class="input-box">
+            <span class="details">Full Name</span>
+            <input type="text" id="name" placeholder="Enter your name" required>
+          </div>
+          <div class="input-box">
+            <span class="details">Birth Date</span>
+            <input type="date" id ="birthdate" name="birthdate">
+          </div>
+          <div class="input-box">
+            <span class="details">NIRC/FIN/Passport Number</span>
+            <input type="text" id="NRIC" placeholder="Enter your NRIC/FIN/Passport Number" required>
+          </div>
+          <div class="input-box">
+            <span class="details">Phone Number</span>
+            <input type="text" id="phonenumber" placeholder="Enter your number" required>
+          </div>
+          <div class="input-box">
+            <span class="details">Hospital ID</span>
+            <input type="text" id="hospitalID" placeholder="Enter your Hospital Medical ID" required>
+          </div>
+        </div>
+
+        <div class="button">
+          <input type="submit" value="submit">
+        </div>
+      
+      </form>
+      <ul id="itemsList">
+
+      </ul>
+
+
+    </div>
+
+  </div>
+  <script type="module" src="scripts/app.ts"></script>
+</body>
+</html>

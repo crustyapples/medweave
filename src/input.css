@@ -1,0 +1,60 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html{
+    overflow: visible;
+  }
+  
+  .line-1{
+      position: relative;
+      width: 24em;
+      margin: 0 auto;
+      border-right: solid rgba(0, 0, 0);
+      text-align: center;
+      white-space: nowrap;
+      overflow: hidden;   
+  }
+  
+  /* Animation */
+  .anim-typewriter{
+    animation: typewriter 4s steps(25) 0s 1 normal both,
+               blinkTextCursor 500ms steps(40) infinite normal;
+  }
+  @keyframes typewriter{
+    from{width: 0;}
+    to{width: 28em;}
+  }
+  @keyframes blinkTextCursor{
+    from{border-right-color: rgb(0, 0, 0);}
+    to{border-right-color: transparent;}
+  }
+
+  .badge {
+  height: 100px;
+  width: 100px;
+  display: table-cell;
+  text-align: center;
+  vertical-align: middle;
+  border-radius: 50%;
+  background: rgb(255, 255, 255);
+  
+}
+
+/* Container holding the image and the text */
+.container {
+  position: relative;
+}
+
+/* Bottom right text */
+.text-block {
+  position: absolute;
+  bottom: -75px;
+  right: -10px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+
+
+  
